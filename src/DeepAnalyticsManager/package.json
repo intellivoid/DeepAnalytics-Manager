@@ -38,7 +38,17 @@
         {
             "required": true,
             "file": "DeepAnalyticsManager.php"
+        },
+        {
+            "required": true,
+            "file": "AutoConfig.php"
+        },
+        {
+            "required": true,
+            "file": "Managers/GraphManager.php"
         }
     ],
-    "files": []
+    "files": [
+        "package.json"
+    ]
 }
