@@ -7,6 +7,7 @@
     namespace DeepAnalyticsManager;
 
     use acm\acm;
+    use DeepAnalyticsManager\Managers\GraphManager;
     use Exception;
     use mysqli;
 
@@ -31,6 +32,11 @@
          * @var null
          */
         private $database;
+        
+        /**
+         * @var GraphManager
+         */
+        private GraphManager $GraphManager;
 
         /**
          * CoffeeHouse constructor.
@@ -42,6 +48,7 @@
             $this->DatabaseConfiguration = $this->acm->getConfiguration('Database');
 
             $this->database = null;
+            $this->GraphManager = new GraphManager($this);
         }
 
         /**
@@ -84,5 +91,13 @@
                 $this->DatabaseConfiguration['Name'],
                 $this->DatabaseConfiguration['Port']
             );
+        }
+
+        /**
+         * @return GraphManager
+         */
+        public function getGraphManager(): GraphManager
+        {
+            return $this->GraphManager;
         }
     }
