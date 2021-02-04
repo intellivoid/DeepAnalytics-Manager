@@ -1,0 +1,25 @@
+{
+    "package": {
+        "package_name": "net.intellivoid.deepanalytics_manager",
+        "name": "DeepAnalytics Manager",
+        "version": "1.0.0.0",
+        "author": "Zi Xing Narrakas",
+        "organization": "Intellivoid Technologies",
+        "description": "A library for managing and creating analytical sets using the core library net.intellivoid.deepanalytics",
+        "url": "https://github.com/intellivoid/DeepAnalytics-Manager",
+        "dependencies": [],
+        "configuration": {
+            "autoload_method": "generated_spl",
+            "main": null,
+            "post_installation": [],
+            "pre_installation": []
+        }
+    },
+    "components": [
+        {
+            "required": true,
+            "file": "DeepAnalyticsManager.php"
+        }
+    ],
+    "files": []
+}
